@@ -1,3 +1,24 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --container-bg: #fff;
+    --lotto-bg-color: #4CAF50;
+    --btn-generate-bg: #008CBA;
+    --btn-copy-bg: #f44336;
+    --btn-toggle-bg: #555;
+    --border-color: #ccc;
+}
+
+body.dark-mode {
+    --bg-color: #333;
+    --text-color: #f0f0f0;
+    --container-bg: #444;
+    --lotto-bg-color: #666;
+    --btn-generate-bg: #005f73;
+    --btn-copy-bg: #bf0603;
+    --btn-toggle-bg: #888;
+    --border-color: #555;
+}
 
 body {
     font-family: sans-serif;
@@ -5,11 +26,22 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
     text-align: center;
+    background-color: var(--container-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+    color: var(--text-color);
 }
 
 .lotto-numbers {
@@ -22,13 +54,14 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #4CAF50;
+    background-color: var(--lotto-bg-color);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 5px;
     font-size: 24px;
+    transition: background-color 0.3s;
 }
 
 .buttons {
@@ -44,12 +77,17 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
+    transition: background-color 0.3s;
 }
 
 #generate-btn {
-    background-color: #008CBA;
+    background-color: var(--btn-generate-bg);
 }
 
 #copy-btn {
-    background-color: #f44336;
+    background-color: var(--btn-copy-bg);
+}
+
+#toggle-theme-btn {
+    background-color: var(--btn-toggle-bg);
 }
