@@ -8,27 +8,26 @@ A simple web application to generate random lottery numbers.
 
 ### Style and Design
 
-*   **Layout:** A centered layout with a title, a display for the numbers, and a button.
+*   **Layout:** A centered layout with a title, a display for the numbers, a "Generate" button, and a "Copy" button.
 *   **Colors:** A playful color scheme.
 *   **Fonts:** A clean, readable font.
-*   **Interactivity:** The button will have a hover effect. The numbers will have a simple animation when they appear.
+*   **Interactivity:** The buttons will have a hover effect. The numbers will have a simple animation when they appear.
 
 ### Features
 
 *   **Number Generation:** Generate 6 unique random numbers from 1 to 45.
 *   **Display:** Display the generated numbers in a clear and visually appealing way.
+*   **Copy to Clipboard:** Allow the user to copy the generated numbers to their clipboard.
 
 ## Current Plan
 
-### Create Lotto Number Generator
+### Add "Copy to Clipboard" feature
 
 1.  **`index.html`:**
-    *   Update the title to "Lotto Number Generator".
-    *   Create the basic HTML structure with a container, title, number display area, and a "Generate" button.
+    *   Add a "Copy" button next to the "Generate" button.
 2.  **`style.css`:**
-    *   Style the main container, title, number display, and the button.
-    *   Use flexbox for layout.
-    *   Add a simple and clean theme.
+    *   Style the new "Copy" button to match the existing design.
 3.  **`main.js`:**
-    *   Implement the `generateNumbers` function to get 6 unique random numbers.
-    *   Add an event listener to the button to call `generateNumbers` and update the UI.
+    *   Add an event listener to the "Copy" button.
+    *   When clicked, the generated numbers will be formatted and copied to the user's clipboard.
+    *   Provide user feedback by temporarily changing the button text to "Copied!".
