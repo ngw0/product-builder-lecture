@@ -147,3 +147,23 @@ button {
     background-color: #218838;
 }
 
+/* Styles for main page navigation buttons */
+.navigation-buttons button {
+    background-color: #555; /* Darker grey for light mode */
+}
+
+body.dark-mode .navigation-buttons button {
+    background-color: #222; /* Even darker grey for dark mode */
+}
+
+/* Styles for back buttons */
+.back-button button {
+    background-color: #6c757d; /* A bit darker than default, but not too dark */
+    margin-bottom: 20px;
+}
+
+body.dark-mode .back-button button {
+    background-color: #495057;
+}
+
+
