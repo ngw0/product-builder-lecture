@@ -3,35 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Main Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Lotto Number Generator</h1>
-        <div class="lotto-numbers">
-        </div>
-        <div class="buttons">
-            <button id="generate-btn">Generate Numbers</button>
-            <button id="toggle-theme-btn">Toggle Theme</button>
+        <h1>Welcome!</h1>
+        <p>Please choose a service:</p>
+        <div class="navigation-buttons">
+            <a href="lotto.html"><button>Lotto Number Generator</button></a>
+            <a href="inquiry.html"><button>Partnership Inquiry</button></a>
         </div>
     </div>
-
-    <div class="contact-container">
-        <h2>Partnership Inquiry</h2>
-        <form action="https://formspree.io/f/xdalwggg" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Inquiry</button>
-        </form>
-    </div>
-    <script src="main.js"></script>
 </body>
 </html>
