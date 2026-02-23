@@ -148,6 +148,19 @@ button {
     background-color: #218838;
 }
 
+.disqus-wrapper {
+    background-color: var(--container-bg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 90%; /* Increased from 80% */
+    max-width: 900px; /* Increased from 700px */
+    text-align: center; /* Center the h1 and a tag */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
 /* Styles for main page navigation buttons */
 .navigation-buttons button {
     background-color: #555; /* Darker grey for light mode */
@@ -166,5 +179,3 @@ body.dark-mode .navigation-buttons button {
 body.dark-mode .back-button button {
     background-color: #495057;
 }
-
-
