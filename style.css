@@ -23,7 +23,7 @@ body.dark-mode {
 body {
     font-family: sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     background-color: var(--bg-color);
@@ -97,7 +97,8 @@ button {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 80%;
     max-width: 500px;
     text-align: left;
